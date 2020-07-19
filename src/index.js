@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Profile from './profile/Profile';
 import * as serviceWorker from './serviceWorker';
+import test from './imgage/aa.png'
+
+
+const handleName = (data) =>{
+  alert(data)
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Profile name="Fawez" bio="wondering" profession="engineer" handleName={handleName}><img src={test} /></Profile>
+      
+  
   </React.StrictMode>,
   document.getElementById('root')
 );
